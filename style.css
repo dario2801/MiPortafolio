@@ -158,6 +158,8 @@ section {
 
 .button-container {
     display: flex;
+    align-items: center;
+    margin-top: 20px;
     gap: 20px;
 }
 
@@ -457,13 +459,16 @@ footer {
 .skills-content .right .angular::before {
     width: 85%;
 }
+
 .skills-content .right .bootstrap::before {
     width: 75%;
 }
+
 .skills-content .right .material::before {
     width: 75%;
 }
-.column p span{
+
+.column p span {
     color: crimson;
 }
 
@@ -721,6 +726,9 @@ footer span {
 /*mediaqueries*/
 
 @media (max-width:947px) {
+    section{
+        width: 100%;
+    }
     .max-width {
         padding: 0 50px;
     }
@@ -766,12 +774,6 @@ footer span {
         margin: 20px 0;
         font-size: 25px;
     }
-
-    .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-
     .home .home-content .text-2 {
         font-size: 70px;
     }
@@ -822,13 +824,6 @@ footer span {
     }
 }
 
-@media (max-width:1300px) {
-    .home .max-width {
-
-        margin-left: 0;
-    }
-}
-
 @media (max-width:991px) {
     .home .max-width {
 
@@ -838,7 +833,6 @@ footer span {
 
 @media (max-width:690px) {
     .max-width {
-
         margin-left: 0;
         padding: 0 23px;
     }
@@ -862,8 +856,27 @@ footer span {
 }
 
 @media (max-width:500px) {
+    .hero-page{
+        padding: 0 30px;
+    }
     .max-width {
+        margin-left: 0;
+        padding: 0 23px;
+    }
 
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
+@media (max-width:430px) {
+    .hero-page{
+        padding: 0 20px;
+    }
+    .max-width {
         margin-left: 0;
         padding: 0 23px;
     }
